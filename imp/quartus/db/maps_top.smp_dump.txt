@@ -1,0 +1,39 @@
+
+State Machine - |maps_top|rad:u_rad|spi_cs
+Name spi_cs.latch_z_reg spi_cs.latch_y_reg spi_cs.latch_x_reg spi_cs.read_z_reg spi_cs.send_z_reg_req spi_cs.read_y_reg spi_cs.send_y_reg_req spi_cs.read_x_reg spi_cs.send_x_reg_req spi_cs.wait_between_reads spi_cs.set_8_bit_mode spi_cs.idle 
+spi_cs.idle 0 0 0 0 0 0 0 0 0 0 0 0 
+spi_cs.set_8_bit_mode 0 0 0 0 0 0 0 0 0 0 1 1 
+spi_cs.wait_between_reads 0 0 0 0 0 0 0 0 0 1 0 1 
+spi_cs.send_x_reg_req 0 0 0 0 0 0 0 0 1 0 0 1 
+spi_cs.read_x_reg 0 0 0 0 0 0 0 1 0 0 0 1 
+spi_cs.send_y_reg_req 0 0 0 0 0 0 1 0 0 0 0 1 
+spi_cs.read_y_reg 0 0 0 0 0 1 0 0 0 0 0 1 
+spi_cs.send_z_reg_req 0 0 0 0 1 0 0 0 0 0 0 1 
+spi_cs.read_z_reg 0 0 0 1 0 0 0 0 0 0 0 1 
+spi_cs.latch_x_reg 0 0 1 0 0 0 0 0 0 0 0 1 
+spi_cs.latch_y_reg 0 1 0 0 0 0 0 0 0 0 0 1 
+spi_cs.latch_z_reg 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |maps_top|uart_ctrl:u_uart_ctrl|uart_cs
+Name uart_cs.wait_state uart_cs.read_fifo uart_cs.write_fifo uart_cs.reg_access uart_cs.idle 
+uart_cs.idle 0 0 0 0 0 
+uart_cs.reg_access 0 0 0 1 1 
+uart_cs.write_fifo 0 0 1 0 1 
+uart_cs.read_fifo 0 1 0 0 1 
+uart_cs.wait_state 1 0 0 0 1 
+
+State Machine - |maps_top|uart_ctrl:u_uart_ctrl|UART_TX:u_uart_tx|r_SM_Main
+Name r_SM_Main.s_Cleanup r_SM_Main.s_TX_Stop_Bit r_SM_Main.s_TX_Data_Bits r_SM_Main.s_TX_Start_Bit r_SM_Main.s_Idle 
+r_SM_Main.s_Idle 0 0 0 0 0 
+r_SM_Main.s_TX_Start_Bit 0 0 0 1 1 
+r_SM_Main.s_TX_Data_Bits 0 0 1 0 1 
+r_SM_Main.s_TX_Stop_Bit 0 1 0 0 1 
+r_SM_Main.s_Cleanup 1 0 0 0 1 
+
+State Machine - |maps_top|uart_ctrl:u_uart_ctrl|UART_RX:u_uart_rx|r_SM_Main
+Name r_SM_Main.s_Cleanup r_SM_Main.s_RX_Stop_Bit r_SM_Main.s_RX_Data_Bits r_SM_Main.s_RX_Start_Bit r_SM_Main.s_Idle 
+r_SM_Main.s_Idle 0 0 0 0 0 
+r_SM_Main.s_RX_Start_Bit 0 0 0 1 1 
+r_SM_Main.s_RX_Data_Bits 0 0 1 0 1 
+r_SM_Main.s_RX_Stop_Bit 0 1 0 0 1 
+r_SM_Main.s_Cleanup 1 0 0 0 1 

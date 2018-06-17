@@ -1,0 +1,463 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do maps_top_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/src/uart_rx.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/src/uart_rx.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity UART_RX
+# -- Compiling architecture rtl of UART_RX
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/src/uart_tx.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/src/uart_tx.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity UART_TX
+# -- Compiling architecture RTL of UART_TX
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/src/reg_map_pkg.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/src/reg_map_pkg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling package reg_map_pkg
+# -- Compiling package body reg_map_pkg
+# -- Loading package reg_map_pkg
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/altera_fifo.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/altera_fifo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity altera_fifo
+# -- Compiling architecture SYN of altera_fifo
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/uart_fifo.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/uart_fifo.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity uart_fifo
+# -- Compiling architecture SYN of uart_fifo
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/src/uart_ctrl.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/src/uart_ctrl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package reg_map_pkg
+# -- Compiling entity uart_ctrl
+# -- Compiling architecture rtl of uart_ctrl
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/src/reg_map.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/src/reg_map.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package reg_map_pkg
+# -- Compiling entity reg_map
+# -- Compiling architecture rtl of reg_map
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/src/spi_if_blk.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/src/spi_if_blk.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package reg_map_pkg
+# -- Compiling entity spi_if_blk
+# -- Compiling architecture rtl of spi_if_blk
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/src/maps_top.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/src/maps_top.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Loading package reg_map_pkg
+# -- Compiling entity maps_top
+# -- Compiling architecture rtl of maps_top
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/../../sim/tb_src/maps_top_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:58:30 on May 17,2018
+# vcom -reportprogress 300 -93 -work work C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/../../sim/tb_src/maps_top_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity maps_top_tb
+# -- Compiling architecture rtl_tb of maps_top_tb
+# End time: 16:58:30 on May 17,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  maps_top_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" maps_top_tb 
+# Start time: 16:58:31 on May 17,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.maps_top_tb(rtl_tb)
+# Loading work.reg_map_pkg(body)
+# Loading work.maps_top(rtl)
+# Loading work.uart_ctrl(rtl)
+# Loading work.uart_rx(rtl)
+# Loading work.uart_tx(rtl)
+# Loading work.uart_fifo(syn)
+# Loading altera_mf.altera_device_families(body)
+# Loading altera_mf.scfifo(behavior)
+# Loading work.altera_fifo(syn)
+# Loading work.spi_if_blk(rtl)
+# Loading work.reg_map(rtl)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_reg_map
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_reg_map
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_uart_ctrl
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_uart_ctrl
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 41665 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 41665 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 41665 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 124995 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 124995 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 124995 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 208325 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 208325 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 208325 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 291655 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 291655 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 374985 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 374985 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 458315 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 458315 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 541645 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 541645 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 624975 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 624975 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 708305 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 708305 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 791635 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 791635 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 874965 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 874965 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958295 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958295 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1041625 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1041625 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1124955 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1124955 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1208285 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1208285 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1291615 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1291615 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1374945 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1374945 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1458275 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1458275 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1541605 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1541605 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1624935 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1624935 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1708265 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1708265 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1791595 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1791595 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1874925 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1874925 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1958255 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1958255 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2041585 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2041585 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2124915 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2124915 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2208245 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2208245 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Failure: Simulation Completed
+#    Time: 1606915990 ps  Iteration: 0  Process: /maps_top_tb/line__132 File: C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/../../sim/tb_src/maps_top_tb.vhd
+# Break in Process line__132 at C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/../../sim/tb_src/maps_top_tb.vhd line 288
+add wave -position insertpoint  \
+sim:/maps_top_tb/uut/u_reg_map/i_registers
+RESTART
+# invalid command name "RESTART"
+
+restart
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_reg_map
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_reg_map
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_uart_ctrl
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /maps_top_tb/uut/u_uart_ctrl
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 41665 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 41665 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 41665 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 124995 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 124995 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 124995 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 208325 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 208325 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 208325 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 291655 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 291655 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 374985 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 374985 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 458315 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 458315 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 541645 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 541645 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 624975 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 624975 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 708305 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 708305 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 791635 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 791635 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 874965 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 874965 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958295 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 958295 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1041625 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1041625 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1124955 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1124955 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1208285 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1208285 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1291615 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1291615 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1374945 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1374945 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1458275 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1458275 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1541605 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1541605 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1624935 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1624935 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1708265 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1708265 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1791595 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1791595 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1874925 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1874925 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1958255 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1958255 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2041585 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2041585 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2124915 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2124915 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2208245 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2208245 ps  Iteration: 1  Instance: /maps_top_tb/uut/u_spi_if_blk
+# ** Failure: Simulation Completed
+#    Time: 1606915990 ps  Iteration: 0  Process: /maps_top_tb/line__132 File: C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/../../sim/tb_src/maps_top_tb.vhd
+# Break in Process line__132 at C:/Users/Bryan/Documents/Projects/VHDL/maps/imp/quartus/../../sim/tb_src/maps_top_tb.vhd line 288
+# End time: 17:07:37 on May 17,2018, Elapsed time: 0:09:06
+# Errors: 1, Warnings: 134
