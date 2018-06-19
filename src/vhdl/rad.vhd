@@ -5,8 +5,8 @@
 --
 --  AUTHOR: Bryan Kerr
 --
---  REVISION: 1.1
---  DATE: 06/01/2018
+--  REVISION: 1.2
+--  DATE: 06/18/2018
 --
 --  DESCRIPTION:
 --  
@@ -25,6 +25,9 @@
 --------------------------------------------------------------------------------
 --  REVISION HISTORY (MANUAL):
 --  06/01/2018 BEK - Initial coding
+--  06/18/2018 BEK - Instantiated FIR filter (fir_8) and the x,y,z outputs are
+--                   ran through this filter before being output.
+--                   Removed unneccessary libraries.
 --
 --------------------------------------------------------------------------------
 -- Library declarations
@@ -33,8 +36,6 @@ library ieee;
 
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
 
 --------------------------------------------------------------------------------
 -- Entity declaration
@@ -95,9 +96,27 @@ signal spi_busy_reg1  : std_logic; -- registered version of spi_busy
 signal spi_busy_reg2  : std_logic; -- registered version of spi_busy
 signal spi_busy_reg3  : std_logic; -- registered version of spi_busy
 signal fall_edge_busy : std_logic; -- delayed falling edge of spi_busy (used in SM)
+-- Internal output signals
+signal acc_x_data_i : signed(7 downto 0);
+signal acc_y_data_i : signed(7 downto 0);
+signal acc_z_data_i : signed(7 downto 0);
 --------------------------------------------------------------------------------
 -- Component declarations
 --------------------------------------------------------------------------------
+component fir_8
+   port
+   (
+   -- Clocks and Resets -- 
+   CLK_12        : in  std_logic; -- 12 MHz clock
+   RST_N         : in  std_logic; -- Active low asynchronous reset
+   -- Data Laches --
+   LATCH_DATA    : in  std_logic; -- Indicates new data is available
+   -- Data  --
+   UNFILTERED_DATA : in  std_logic_Vector(7 downto 0); -- Unfiltered Input
+   FILTERED_DATA   : out std_logic_Vector(7 downto 0)  -- Filtered Output
+   );
+end component;
+
 component spi_master
   generic
    (
@@ -145,42 +164,6 @@ begin
    
    fall_edge_busy <= '1' when (spi_busy_reg3='1' and spi_busy_reg2='0') else '0';
    
-   -- When commanded by SM, latch in the Acceleration data in the X direction.
-   latch_x_proc: process(CLK_12, RST_N)
-   begin
-      if(rising_edge(CLK_12)) then
-         if (RST_N='0') then
-            ACC_X_DATA <= (others => '0');
-         elsif (latch_x='1') then
-            ACC_X_DATA <= spi_data_in;
-         end if;
-      end if;
-   end process latch_x_proc;
-   
-   -- When commanded by SM, latch in the Acceleration data in the Y direction.
-   latch_y_proc: process(CLK_12, RST_N)
-   begin
-      if(rising_edge(CLK_12)) then
-         if (RST_N='0') then
-            ACC_Y_DATA <= (others => '0');
-         elsif (latch_y='1') then
-            ACC_Y_DATA <= spi_data_in;
-         end if;
-      end if;
-   end process latch_y_proc;
-   
-   -- When commanded by SM, latch in the Acceleration data in the Z direction.
-   latch_z_proc: process(CLK_12, RST_N)
-   begin
-      if(rising_edge(CLK_12)) then
-         if (RST_N='0') then
-            ACC_Z_DATA <= (others => '0');
-         elsif (latch_z='1') then
-            ACC_Z_DATA <= spi_data_in;
-         end if;
-      end if;
-   end process latch_z_proc;
-
    -- This counter is used as a delay between Accelerometer register reads of
    -- X,Y,Z. Read every 100us.
    one_us_cntr: process(CLK_12, RST_N)
@@ -189,7 +172,7 @@ begin
          if (RST_N='0') then
             wait_cnt <= std_logic_vector(to_unsigned(C_WAIT_TO_SEND-1,wait_cnt'length));
          elsif (en_wait_cnt='1') then
-            wait_cnt <= wait_cnt - 1;
+            wait_cnt <= std_logic_vector(unsigned(wait_cnt) - 1);
             if wait_cnt=(wait_cnt'range => '0') then
                wait_cnt <= std_logic_vector(to_unsigned(C_WAIT_TO_SEND-1,wait_cnt'length));
             end if;
@@ -353,7 +336,39 @@ begin
       end case;
    end process spi_sm;
 
-
+--------------------------------------------------------------------------------
+-- Instantiations
+--------------------------------------------------------------------------------
+   u0_fir_8 : fir_8
+      port map
+      (
+      CLK_12           => CLK_12      ,
+      RST_N            => RST_N       ,
+      LATCH_DATA       => latch_x     ,
+      UNFILTERED_DATA  => spi_data_in ,
+      FILTERED_DATA    => ACC_X_DATA
+      );
+   
+   u1_fir_8 : fir_8
+      port map
+      (
+      CLK_12           => CLK_12      ,
+      RST_N            => RST_N       ,
+      LATCH_DATA       => latch_y     ,
+      UNFILTERED_DATA  => spi_data_in ,
+      FILTERED_DATA    => ACC_Y_DATA
+      );
+   
+   u2_fir_8 : fir_8
+      port map
+      (
+      CLK_12           => CLK_12      ,
+      RST_N            => RST_N       ,
+      LATCH_DATA       => latch_z     ,
+      UNFILTERED_DATA  => spi_data_in ,
+      FILTERED_DATA    => ACC_Z_DATA
+      );
+   
    u_spi_master : spi_master
       generic map
       (
