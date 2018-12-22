@@ -5,8 +5,8 @@
 ##
 ##  AUTHOR: Bryan Kerr
 ##
-##  REVISION:
-##  DATE:
+##  REVISION: 2
+##  DATE: 12/21/2018
 ##
 ##  DESCRIPTION:
 ##  
@@ -16,6 +16,8 @@
 ################################################################################
 ##  REVISION HISTORY (MANUAL):
 ##  06/01/2018 BEK - Initial coding
+##  12/21/2018 BEK - Changed UART baud rate from 38400 to 9600 because 38400
+##                   was giving errors at the receiver.
 ##
 ################################################################################
 ## Library declarations
@@ -27,7 +29,7 @@ import numpy as np
 import time
 
 class uart_ctrl:
-   def __init__(self, port='COM4', baudrate=38400, bytesize=8, parity='N',
+   def __init__(self, port='COM4', baudrate=9600, bytesize=8, parity='N',
                stopbits=1, timeout=1, xonxoff=0, rtscts=0):
       self.ser = serial.Serial(
          port     = port     ,

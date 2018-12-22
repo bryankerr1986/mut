@@ -5,8 +5,8 @@
 --
 --  AUTHOR: Bryan Kerr
 --
---  REVISION:
---  DATE:
+--  REVISION: 2
+--  DATE: 12/21/2018
 --
 --  DESCRIPTION:
 --  
@@ -16,7 +16,7 @@
 --------------------------------------------------------------------------------
 --  REVISION HISTORY (MANUAL):
 --  05/03/2018 BEK - Initial coding
---                 - Changed UART baud rate from 115200 to 9600 because 115200
+--  12/21/2018 BEK - Changed UART baud rate from 115200 to 9600 because 115200
 --                   was giving errors at the receiver.
 --
 --------------------------------------------------------------------------------
@@ -296,7 +296,7 @@ begin
    u_uart_rx : uart_rx
       generic map
       (
-      G_CLKS_PER_BIT => 313     -- (12000000)/(9600) = 1250
+      G_CLKS_PER_BIT => 1250     -- (12000000)/(9600) = 1250
       )
       port map
       (
@@ -309,7 +309,7 @@ begin
    u_uart_tx : uart_tx
       generic map
       (
-      G_CLKS_PER_BIT => 313     -- (12000000)/(9600) = 1250
+      G_CLKS_PER_BIT => 1250     -- (12000000)/(9600) = 1250
       )
       port map
       (
